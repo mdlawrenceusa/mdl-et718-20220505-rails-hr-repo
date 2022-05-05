@@ -30,5 +30,13 @@
   <%= @resume.phone %>
 </p>
 
+
+<h2>Skills</h2>
+<%= render @resume.skills %>
+ 
+<h2>Add a Skill:</h2>
+<%= render 'skills/form' %>
+
+
 <%= link_to 'Edit', edit_resume_path(@resume) %> |
 <%= link_to 'Back', resumes_path %>
